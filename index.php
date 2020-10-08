@@ -11,11 +11,7 @@
 		<input name="text" type="text">
 		<button name="button">Сгенерировать</button>
 	</form>
-	<?php 
-		if(isset($_POST['text'])) {
-			echo "<p>  </p>"
-		}
-	 ?>
+
 </body>
 </html>
 
