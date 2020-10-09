@@ -8,7 +8,7 @@
 	// Рандомное слово 
 	$random_word = '';
 	// URL адресс
-	$url = 'https://sto.local/';
+	// $url = 'https://sto.local/';
 
 
 	// Генератор рандомного слова
@@ -21,7 +21,7 @@
 			header("Location: /");
 		}
 		// Готовая новая ссылка
-		$url_new = $url . $random_word;
+		$url_new = $random_word;
 
 		// Проверка на эксклюзивность ссылки
 		$sql = "SELECT * FROM `generation` WHERE `new_link` LIKE '" . $url_new . "'" ;
